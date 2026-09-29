@@ -1,0 +1,7 @@
+{
+  "contact": ["mailto:security@example.com", "https://example.com/report"],
+  "expires_days": 180,
+  "preferred_languages": "en, fr",
+  "canonical": "https://example.com/.well-known/security.txt",
+  "policy": "https://example.com/security-policy"
+}

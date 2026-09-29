@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "security-txt"
+version = "1.0.0"
+description = "Check and generate RFC 9116 security.txt files"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Marvin Palencia" }]
+dependencies = []
+
+[project.scripts]
+security-txt = "security_txt.cli:main"
+
+[tool.setuptools]
+packages = ["security_txt"]
