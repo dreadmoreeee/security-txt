@@ -78,6 +78,22 @@ Preferred-Languages: en, fr
 Canonical: https://demarkstudio.ca/.well-known/security.txt
 ```
 
+After this run I added the file to my portfolio's build (Expires renewed on every build) and checked it again:
+
+```
+$ python -m security_txt check marvin.demarkstudio.ca
+[well-known] https://marvin.demarkstudio.ca/.well-known/security.txt
+  HTTP 200  Content-Type: text/plain; charset=utf-8
+  Contact: mailto:hola@demarkstudio.ca
+  Expires: 2027-09-29T00:00:00Z
+  Preferred-Languages: en, es
+  Canonical: https://marvin.demarkstudio.ca/.well-known/security.txt
+  expires in 365 days
+  result: VALID
+Overall: VALID
+exit code: 0
+```
+
 Test suite: `42 passed in 11.25s`
 
 Marvin Palencia, founder of [DeMark Studio](https://demarkstudio.ca), Miramichi, New Brunswick, Canada. Portfolio: [marvin.demarkstudio.ca](https://marvin.demarkstudio.ca)
